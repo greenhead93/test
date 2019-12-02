@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>говорящая жопа</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <script src="C:\Users\User\Documents\tetris\tetris.js"></script>
+    <p>
+        <img src="C:\Users\User\Documents\tetris\fuck.png" alt="моя пися" text-align=center></img>
+    </p>
+    <h1>ЭТО ТЫ</h1>
+
+    <script type="text/javascript">
+        R = 0;
+        DI = document.getElementsByTagName("img");
+        DIL = DI.length;
+
+        function A() {
+            for (i = 0; i - DIL; i++) {
+                DIS = DI[i].style;
+                DIS.position = 'relative';
+                DIS.left = (Math.sin(R + i) * 100) + "px";
+                DIS.top = (Math.cos(R + i) * 100) + "px"
+            }
+            R++;
+        }
+        setInterval('A()', 100);
+    </script>
+</body>
+
+</html>
